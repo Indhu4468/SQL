@@ -1,0 +1,22 @@
+create database info;
+use info;
+create table batch_details(roll_num int, name varchar(25),course varchar (25),
+join_date date,phone bigint);
+insert into batch_details values
+(52,'Mano','Python','2026-09-08',9870654534),(23,'Mathi','Full stack','2025-07-14',9760504032),
+(43,'Indhu','Java','2025-03-02',9123456576),(32,'Ram','Java full stack','2025-04-03',9874356274),
+(13,'Charan','Python','2026-05-02',9760666554);
+select*from batch_details;
+
+use batch;
+select*from  weekend;
+select date_format(now(),"%Y-%m-%d");
+select date_format(now(),"%hh-%mm-%ss");
+
+select datediff(now(),'2023-04-04')as date;
+select datediff(now(),'2005-04-04')as day;
+select datediff(now(),'2005-04-04')as month;
+select datediff(now(),'2005-04-04')as year;
+
+select date_sub(now(),interval 27 year) as date;
+select date_add(now(),interval 5 day)as day;
